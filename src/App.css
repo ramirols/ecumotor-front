@@ -1,0 +1,65 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: #fff;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
+.header__container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.headerLogo__container {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333; /* Color del texto del logo */
+}
+
+.header__logo{
+  width: 120px;
+}
+
+.header__menu {
+  display: flex;
+  gap: 20px;
+}
+
+.menu a {
+  text-decoration: none;
+  font-size: 1rem;
+  color: #333; /* Color de los enlaces del menú */
+  position: relative;
+}
+
+.menu a:hover,
+.menu a.active {
+  color: #fa8c16; /* Color naranja para el hover y el enlace activo */
+}
+
+.menu a.active::after,
+.menu a:hover::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -5px;
+  height: 3px;
+  background-color: #fa8c16; /* Barra naranja bajo el enlace activo o al hacer hover */
+  border-radius: 2px;
+}
+.wrapper{
+  margin-top: 90px;
+   
+} 
